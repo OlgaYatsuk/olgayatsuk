@@ -3,6 +3,10 @@
   padding: 140px 0 280px;
   top: -1px;
 
+  @media screen and (max-width: $tablet-screen) {
+    padding: 140px 0 350px;
+  }
+
   &::before {
     content: '';
     position: absolute;
