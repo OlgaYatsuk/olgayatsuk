@@ -1,0 +1,35 @@
+.about {
+  position: relative;
+  top: -80px;
+  z-index: 2;
+  padding: 100px 0 230px;
+
+  @media screen and (max-width: $tablet-screen){
+    padding: 70px 0 100px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: $dark-grey;
+    transform: skewY(-4deg);
+    width: 120%;
+    height: 100%;
+  }
+
+  &::after{
+    content: url("../images/bg-figure-2.svg");
+    position: absolute;
+    bottom: -50px;
+    transform: skewY(2.5deg);
+    right: 0;
+    z-index: 0;
+
+    @media screen and (max-width: $tablet-screen){
+      content: '';
+    }
+  }
+}

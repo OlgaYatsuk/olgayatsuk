@@ -1,0 +1,69 @@
+.contacts {
+  position: relative;
+  //top: -50px;
+}
+
+.contact-form {
+  background-color: $dark-blue;
+  width: 100%;
+  max-width: 570px;
+  padding: 60px 80px;
+  z-index: 4;
+  position: absolute;
+  bottom: 100px;
+
+  @media screen and (max-width: $tablet-screen){
+    left: 0;
+    bottom: 500px;
+  }
+}
+
+.contact-form__item {
+  margin-top: 30px;
+  position: relative;
+}
+
+.contact-form__label {
+  color: $sky-blue;
+  font-size: 0.875rem;
+  position: absolute;
+  left: 24px;
+  background: $dark-blue;
+  padding: 7px;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.contact-form__input {
+  width: 100%;
+  border: 1px solid $sky-blue;
+  background-color: $dark-blue;
+  height: 40px;
+  padding: 5px 10px;
+  color: $white;
+}
+
+.address {
+  position: absolute;
+  background: $white;
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+  padding: 20px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.adress__item {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.7;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.adress__item--mail {
+  font-weight: bold;
+}

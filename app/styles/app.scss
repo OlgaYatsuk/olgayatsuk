@@ -1,0 +1,28 @@
+//@import '../../node_modules/sanitize.scss/sanitize';
+@import '../../node_modules/reset-css/reset';
+
+
+@import "base/colors";
+@import "base/fonts";
+@import "base/screen-width";
+@import "base/font-styles";
+@import 'base/flex-container';
+
+//@import 'components/';
+@import 'components/about';
+@import 'components/button';
+@import 'components/catalog';
+@import 'components/company';
+@import 'components/footer';
+@import 'components/contacts';
+@import 'components/hero';
+@import 'components/map';
+@import 'components/nav';
+@import 'components/warranty';
+@import 'components/lines';
+@import 'components/slider';
+
+
+@import 'main';
+
+

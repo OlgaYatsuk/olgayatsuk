@@ -1,0 +1,24 @@
+{
+  "name": "looqme",
+  "description": "Bower template for this project",
+  "main": "main.js",
+  "authors": [],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "pressure": "^2.1.2",
+    "jquery-ui": "^1.12.1",
+    "isotope-layout": "^3.0.6",
+    "waypoints": "^4.0.1"
+  }
+}

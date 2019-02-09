@@ -1,0 +1,23 @@
+.warranty {
+  background: url("../images/warranty.svg") no-repeat 25% 20px;
+  padding: 40px 0 70px;
+
+  @media screen and (max-width: $tablet-screen){
+    background: url("../images/warranty.svg") no-repeat 8% 40px;
+    background-size: 30%;
+    padding: 10px 0 50px;
+  }
+}
+
+.warranty__text {
+  max-width: 800px;
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.5;
+  color: $black;
+  margin-left: 40%;
+
+  @media screen and (max-width: $tablet-screen){
+   font-size: 1.8rem;
+  }
+}

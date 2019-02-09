@@ -1,0 +1,14 @@
+.lines {
+  transform: rotate(-45deg);
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lines__item {
+  border-right: 1px solid $light-grey;
+  width: 33%;
+  height: 100%;
+}

@@ -1,0 +1,17 @@
+.button {
+  background-color: $red;
+  color: $white;
+  font-weight: bold;
+  font-size: 1.375rem;
+  text-align: center;
+  padding: 10px;
+  width: 220px;
+  margin-top: 40px;
+  border: 0;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+
+  &:hover {
+    box-shadow: 5px 5px 30px rgba($red, 0.6);
+  }
+}

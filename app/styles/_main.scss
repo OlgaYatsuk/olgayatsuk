@@ -1,0 +1,63 @@
+//@import '../../node_modules/reset-css';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-weight: 300;
+
+  @media screen and (max-width: $tablet-screen) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 374px){
+    font-size: 10px;
+  }
+}
+
+body {
+  font-family:  'Google Sans', sans-serif;
+  font-weight: normal;
+  animation: fadein 1s;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+main {
+}
+
+.container {
+  max-width: 1700px;
+  padding: 0 20px;
+  margin: 0 auto;
+  //overflow: hidden;
+
+  @media screen and (max-width: 1720px) {
+    max-width: 1200px;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
