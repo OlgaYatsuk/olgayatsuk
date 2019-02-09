@@ -1,6 +1,6 @@
 .company {
   position: relative;
-  padding: 250px 0 150px;
+  padding: 280px 0 150px;
 
   @media screen and (max-width: $tablet-screen){
     padding: 100px 0 50px;
@@ -25,6 +25,7 @@
     left: 0;
     transform: skewY(2.3deg) rotate(180deg);
     z-index: 0;
+    max-width: 62vw;
 
     @media screen and (max-width: $tablet-screen){
       content: '';

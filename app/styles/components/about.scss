@@ -26,6 +26,8 @@
     bottom: -50px;
     transform: skewY(2.5deg);
     right: 0;
+    max-width: 62vw;
+
     z-index: 0;
 
     @media screen and (max-width: $tablet-screen){
