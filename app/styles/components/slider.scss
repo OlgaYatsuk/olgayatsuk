@@ -1,4 +1,4 @@
-$max-slides: 4;
+$max-slides: 3;
 $slide-transition: 0.5s ease;
 $control-color-hover: hsla(0, 0%, 100%, 0.75);
 $control-color: hsla(0, 0%, 100%, 0.25);
@@ -50,6 +50,7 @@ $control-color-selected: hsla(0, 0%, 100%, 0.5);
       position: relative;
       display: inline-block;
       width: 500px;
+      object-fit: cover;
       height: 300px;
       overflow: hidden;
       font-size: initial;
@@ -58,6 +59,11 @@ $control-color-selected: hsla(0, 0%, 100%, 0.5);
       vertical-align: top;
       box-sizing: border-box;
       white-space: normal;
+
+      img {
+        height: 230px;
+        object-fit: cover;
+      }
 
       > * {
         width: 100%;
@@ -154,7 +160,7 @@ $control-color-selected: hsla(0, 0%, 100%, 0.5);
 
   > .slider-arrows {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     width: 100%;
     max-width: 150px;
     left: 50%;
