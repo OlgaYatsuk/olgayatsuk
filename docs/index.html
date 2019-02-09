@@ -45,17 +45,25 @@
     </div>
   </div>
   <div class="about js-section" id="about">
-    <div class="lines">
-      <div class="lines__item"></div>
-      <div  class="lines__item"></div>
-      <div class="lines__item"></div>
-    </div>
     <div class="flex-container">
-        <div>
-          <div class="slider slider--about js-slider">
-            <div><img src="./images/about-1.png" alt="machine"></div>
-          </div>
+      <div class="slider slider-loop slider--about">
+        <input type="radio" name="slides" id="about-slides_1">
+        <input type="radio" name="slides" id="about-slides_2">
+        <input type="radio" name="slides" id="about-slides_3">
+        <input type="radio" name="slides" id="about-slides_4" checked="">
+        <ul class="slider__list">
+          <li class="slider__item"><img src="./images/about-1.png" alt=""></li>
+          <li class="slider__item"><img src="./images/about-1.png" alt=""></li>
+          <li class="slider__item"><img src="./images/about-1.png" alt=""></li>
+          <li class="slider__item"><img src="./images/about-1.png" alt=""></li>
+        </ul>
+        <div class="slider-arrows">
+          <label for="about-slides_1" class="slider-arrows__item"></label>
+          <label for="about-slides_2" class="slider-arrows__item"></label>
+          <label for="about-slides_3" class="slider-arrows__item"></label>
+          <label for="about-slides_4" class="slider-arrows__item"></label>
         </div>
+      </div>
         <div>
           <h3 class="block-title">Про нас</h3>
           <p class="text--accent">ТОВ «Білтім» спеціалізується на постачанні вантажопідйомної техніки і устаткуванні для
@@ -95,11 +103,23 @@
         </div>
       </div>
       <div>
-        <div class="slider js-slider">
-          <div><img src="./images/about-1.png" alt="machine"></div>
-          <!--<div><img src="./images/about-1.png" alt="machine"></div>-->
-          <!--<div><img src="./images/about-1.png" alt="machine"></div>-->
-          <!--<img src="./images/about-1.png" alt="machine">-->
+        <div class="slider slider-loop">
+          <input type="radio" name="slides" id="company-slides_1">
+          <input type="radio" name="slides" id="company-slides_2">
+          <input type="radio" name="slides" id="company-slides_3">
+          <input type="radio" name="slides" id="company-slides_4" checked="">
+          <ul class="slider__list">
+            <li class="slider__item"><img src="./images/about-1.png" alt=""></li>
+            <li class="slider__item"><img src="./images/about-1.png" alt=""></li>
+            <li class="slider__item"><img src="./images/about-1.png" alt=""></li>
+            <li class="slider__item"><img src="./images/about-1.png" alt=""></li>
+          </ul>
+          <div class="slider-arrows">
+            <label for="company-slides_1" class="slider-arrows__item"></label>
+            <label for="company-slides_2" class="slider-arrows__item"></label>
+            <label for="company-slides_3" class="slider-arrows__item"></label>
+            <label for="company-slides_4" class="slider-arrows__item"></label>
+          </div>
         </div>
         <p class="text--accent product-list-title">Різні за класом вантажопідйомності, але такі що мають в своєму
           складі:</p>
