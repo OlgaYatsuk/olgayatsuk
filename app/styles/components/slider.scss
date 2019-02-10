@@ -13,6 +13,15 @@ $control-color-selected: hsla(0, 0%, 100%, 0.5);
   height: 300px;
   transform: skew(2.5deg);
 
+  @media screen and (max-width: $tablet-screen) {
+    transform: none;
+  }
+
+  @media screen and (max-width: $tablet-screen){
+    width: 100%;
+    max-width: 375px;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -25,6 +34,10 @@ $control-color-selected: hsla(0, 0%, 100%, 0.5);
     z-index: -1;
     right: 0;
     transform: translate(64%, -50%);
+
+    @media screen and (max-width: $tablet-screen){
+      display: none;
+    }
   }
 
   > input {
@@ -51,7 +64,7 @@ $control-color-selected: hsla(0, 0%, 100%, 0.5);
       display: inline-block;
       width: 500px;
       object-fit: cover;
-      height: 300px;
+      height: 230px;
       overflow: hidden;
       font-size: initial;
       line-height: normal;
@@ -61,7 +74,7 @@ $control-color-selected: hsla(0, 0%, 100%, 0.5);
       white-space: normal;
 
       img {
-        height: 230px;
+        height: auto;
         object-fit: cover;
       }
 
@@ -202,7 +215,11 @@ $control-color-selected: hsla(0, 0%, 100%, 0.5);
 
   &::before {
     transform: translate(-50%, -50%);
-    perspective: 500px;
+    //perspective: 500px;
     left: 0;
+  }
+
+  > .slider-arrows {
+    left: 80%;
   }
 }

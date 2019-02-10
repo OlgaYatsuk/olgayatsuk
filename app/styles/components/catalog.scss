@@ -4,7 +4,7 @@
   top: -1px;
 
   @media screen and (max-width: $tablet-screen) {
-    padding: 140px 0 350px;
+    padding: 100px 0 350px;
   }
 
   &::before {
@@ -37,6 +37,10 @@
 
 .catalog-product {
   position: relative;
+
+  @media screen and (max-width: $tablet-screen) {
+    min-height: 385px;
+  }
 }
 
 .catalog-product__img {
