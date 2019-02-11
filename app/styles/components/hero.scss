@@ -38,3 +38,12 @@
     background: linear-gradient(100deg, $black , transparent);
   }
 }
+
+.hero__logo {
+  margin-left: 35px;
+  display: block;
+
+  @media screen and (max-width: $tablet-screen){
+    margin-left: 0;
+  }
+}

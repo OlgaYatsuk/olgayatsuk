@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1200px;
-  padding: 0 20px;
+  max-width: 1130px;
   flex-wrap: wrap;
   margin: 0 auto;
 
   @media screen and (max-width: 991px){
     justify-content: space-around;
+    padding: 0 20px;
   }
 
 }

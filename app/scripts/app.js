@@ -2,9 +2,10 @@
 import 'owl.carousel';
 
 import Scroll from './anchor-scroll'
+import Form from './form-success'
 
 Scroll();
-
+Form();
 
 $(function () {
   $('.js-nav-btn').on('click', showMenu);

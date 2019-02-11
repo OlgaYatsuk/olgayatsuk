@@ -3,48 +3,6 @@
   //top: -50px;
 }
 
-.contact-form {
-  background-color: $dark-blue;
-  width: 100%;
-  max-width: 570px;
-  padding: 60px 80px;
-  z-index: 4;
-  position: absolute;
-  bottom: 100px;
-
-  @media screen and (max-width: $tablet-screen){
-    left: 0;
-    bottom: 500px;
-    padding: 40px;
-    text-align: center;
-  }
-}
-
-.contact-form__item {
-  margin-top: 30px;
-  position: relative;
-}
-
-.contact-form__label {
-  color: $sky-blue;
-  font-size: 0.875rem;
-  position: absolute;
-  left: 24px;
-  background: $dark-blue;
-  padding: 7px;
-  top: 0;
-  transform: translateY(-50%);
-}
-
-.contact-form__input {
-  width: 100%;
-  border: 1px solid $sky-blue;
-  background-color: $dark-blue;
-  height: 40px;
-  padding: 5px 10px;
-  color: $white;
-}
-
 .address {
   position: absolute;
   background: $white;

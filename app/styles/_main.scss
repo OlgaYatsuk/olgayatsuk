@@ -13,11 +13,7 @@ html, body {
   font-weight: 300;
 
   @media screen and (max-width: $tablet-screen) {
-    font-size: 12px;
-  }
-
-  @media screen and (max-width: 374px){
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -53,7 +49,7 @@ main {
   }
 
   @media screen and (max-width: 1720px) {
-    max-width: 1200px;
+    max-width: 1170px;
   }
 }
 

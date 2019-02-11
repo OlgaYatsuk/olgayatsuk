@@ -7,15 +7,10 @@ $control-color-selected: hsla(0, 0%, 100%, 0.5);
 .slider {
   display: inline-block;
   position: relative;
-  width: 500px;
+  width: 400px;
   object-fit: cover;
   padding-bottom: 0 !important;
   height: 300px;
-  transform: skew(2.5deg);
-
-  @media screen and (max-width: $tablet-screen) {
-    transform: none;
-  }
 
   @media screen and (max-width: $tablet-screen){
     width: 100%;
@@ -62,9 +57,9 @@ $control-color-selected: hsla(0, 0%, 100%, 0.5);
     > li {
       position: relative;
       display: inline-block;
-      width: 500px;
+      width: 400px;
+      height: 235px;
       object-fit: cover;
-      height: 230px;
       overflow: hidden;
       font-size: initial;
       line-height: normal;
@@ -75,6 +70,7 @@ $control-color-selected: hsla(0, 0%, 100%, 0.5);
 
       img {
         height: auto;
+        min-height: 100%;
         object-fit: cover;
       }
 

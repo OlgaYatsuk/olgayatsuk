@@ -30,17 +30,17 @@
   <button class="burger js-nav-btn"></button>
   <nav class="nav js-nav">
     <button class="nav__close js-close"></button>
-    <a href="#hero" class="nav__link js-nav nav__link--logo"></a>
-    <a href="#about" class="nav__link js-nav">Про нас</a>
-    <a href="#company" class="nav__link js-nav">Fassi</a>
-    <a href="#catalog" class="nav__link js-nav">Каталог</a>
-    <a href="#contacts" class="nav__link js-nav">Контакти</a>
+    <a href="#hero" class="nav__link js-nav-link nav__link--logo"></a>
+    <a href="#about" class="nav__link js-nav-link">Про нас</a>
+    <a href="#company" class="nav__link js-nav-link">Fassi</a>
+    <a href="#catalog" class="nav__link js-nav-link">Каталог</a>
+    <a href="#contacts" class="nav__link js-nav-link">Контакти</a>
   </nav>
   <div class="hero" id="hero">
     <div class="container">
-      <img src="./images/logo-white.svg" alt="Fassi" class="src">
+      <img src="./images/logo-white.svg" alt="Fassi" class="hero__logo">
       <h1 class="text--accent">ТОВ «Білтім» — офіційний дистриб’ютор кранів-маніпуляторів в Україні</h1>
-      <h2 class="text--extra-margin"><strong>Наша ціль</strong> - це забезпечити покупців якісним продуктом і
+      <h2 class="text--extra-margin"><strong>Наша ціль</strong> - забезпечити покупців якісним продуктом і
         висококласним обслуговуванням.</h2>
     </div>
   </div>
@@ -65,7 +65,7 @@
           <h3 class="block-title">Про нас</h3>
           <p class="text--accent">ТОВ «Білтім» спеціалізується на постачанні вантажопідйомної техніки і устаткуванні для
             забезпечення промислового і цивільного будівництва.</p>
-          <p class="text text--extra-margin">Вся продукція, поставлена нашою компанією, є якісною і надійною. Цінності
+          <p class="text text--extra-margin">Вся продукція, що постачається нашою компанією, є якісною і надійною. Цінності
             нашої компанії - це чесність, надійність і професіоналізм. Глибоке розуміння технології і принципів роботи
             наших експертів гарантує, що ви отримаєте те, що вам потрібно.</p>
         </div>
@@ -173,25 +173,31 @@
       <div class="contact-form">
         <h3 class="block-title">Контакти</h3>
         <p class="text--accent">Зв'язатись з нами</p>
-        <form action="" class="">
+        <form action="" class="js-form"  autocomplete="off" >
           <div class="contact-form__item">
             <label for="name" class="contact-form__label">Ім'я</label>
-            <input id="name" type="text" class="contact-form__input">
+            <input id="name" type="text" class="contact-form__input js-form-input" pattern="[a-zA-Z]+" required>
           </div>
           <div class="contact-form__item">
             <label for="phone" class="contact-form__label">Телефон</label>
-            <input id="phone" type="text" class="contact-form__input">
+            <input id="phone" type="text" class="contact-form__input js-form-input" required>
           </div>
           <div class="contact-form__item">
             <label for="email" class="contact-form__label">E-mail</label>
-            <input id="email" type="email" class="contact-form__input">
+            <input id="email" type="email" class="contact-form__input js-form-input" required>
           </div>
           <div class="contact-form__item">
             <label for="message" class="contact-form__label">Повідомлення</label>
-            <textarea name="message" id="message" cols="30" rows="10" class="contact-form__input"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" class="contact-form__input contact-form__input--textarea js-form-input" required></textarea>
           </div>
-          <button class="button" type="submit">Відправити</button>
+          <button class="button js-form-submit" type="submit">Відправити</button>
         </form>
+      </div>
+      <div class="form-success-window js-form-success">
+        <p class="form-success-window__title">Дякуємо!</p>
+        <p class="form-success-window__text">Ваше повідомлення відправлено</p>
+        <p class="form-success-window__connection">Наш співробітник звяжеться з Вами найближчим часом.</p>
+        <button class="form-success-window__close js-form-success-close"></button>
       </div>
     </div>
     <div class="address">
